@@ -14,7 +14,7 @@ function sum(a,b){
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -48,10 +48,16 @@ Write a function called sumAndMultiply() that takes in three numbers as argument
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(){}
+function sumAndMultiply(e,f,g){
+  var sumThree = e + f + g;
+  var prodThree = (e * f) * g;
+  var prodMsg1 = e + ' and ' + f + ' and ' + g + ' sum to ' + sumThree + '.';
+  var prodMsg2 = 'The product of ' + e + ' and ' + f + ' and ' + g + ' is ' + prodThree + '.';
+  return [sumThree, prodMsg1, prodMsg2];
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
 
